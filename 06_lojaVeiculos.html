@@ -10,11 +10,35 @@
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
+    let novocarro1 = prompt(`Qual carro deseja adicionar na lista`)
+    let tipoCarro1 = prompt(`Qual o tipo do carro ${novocarro1}? 1-SUV | 2-Sedan | 3-Hatch`)
+    let novocarro2 = prompt(`Qual carro deseja adicionar na lista`)
+    let tipoCarro2 = prompt(`Qual o tipo do carro ${novocarro2}? 1-SUV | 2-Sedan | 3-Hatch`)
+    let novocarro3 = prompt(`Qual carro deseja adicionar na lista`)
+    let tipoCarro3 = prompt(`Qual o tipo do carro ${novocarro3}? 1-SUV | 2-Sedan | 3-Hatch`)
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
     //PROCESSAMENTO
+    if (tipoCarro1 == 1) carroSUV.push(novocarro1);
+    else if (tipoCarro1 == 2) cassos.push(novocarro1);
+    else if (tipoCarro1 == 3) carrosHatch.push(novocarro1)
+
+    if (tipoCarro2 == 1) carroSUV.push(novocarro2);
+    else if (tipoCarro2 == 2) cassos.push(novocarro2);
+    else if (tipoCarro2 == 3) carrosHatch.push(novocarro2)
+
+    if (tipoCarro3 == 1) carroSUV.push(novocarro3);
+    else if (tipoCarro3 == 2) cassos.push(novocarro3);
+    else if (tipoCarro3 == 3) carrosHatch.push(novocarro3)
 
 
     //SAÍDA
+
+    alert(`A lista de SUVs possui ${carrosSUV.join(", ")}`)
+    alert(`A lista de Sedans possui ${cassosSedan.join(", ")}`)
+    alert(`A lista de Hatchs possui ${carrosHatch.join(", ")}`)
 
 </script>

@@ -4,11 +4,19 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
+    const n1 = Number(prompt(`Informe um número`))
+    const n2 = Number(prompt(`Informe um segundo número`))
+    var array = [n1 - n2]
 
 
     //PROCESSAMENTO
+    if (n1 > n2){
+        array.reverse()
+        alert(array)
+    }
+    else if (n2 > n1){
+        alert(array)
+    }
 
-
-    //SAÍDA
     
 </script>

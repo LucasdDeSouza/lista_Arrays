@@ -4,11 +4,43 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
+    const n1 = Number(prompt(`Informe um número`).replace(`,`,`.`))
+    const n2 = Number(prompt(`Informe um segundo número`).replace(`,`,`.`))
+    const n3 = Number(prompt(`Informe um terceiro número`).replace(`,`,`.`))
 
 
-    //PROCESSAMENTO
+
+    if (n1 > n2 && n1 > n3 && n2 > n3) {
+        var array = [n1, n2, n3]
+
+    }
+    else if (n2 > n1 && n2 > n3 && n1 > n3) {
+        var array = [n2, n1, n3]
+
+    }
+    else if (n3 > n1 && n3 > n1 && n1 > n2) {
+        var array = [n3, n1, n2]
+
+    }
+    else if (n1 > n2 && n1 > n3 && n3 > n2) {
+        var array = [n1, n3, n2]
+
+    }
+    else if (n2 > n1 && n2 > n3 && n3 > n1) {
+        var array = [n2, n3, n1]
+
+    }
+    else if (n3 > n1 && n3 > n2 && n2 > n1) {
+        var array = [n3, n2, n1]
+
+    }
+
+    alert(array)
 
 
-    //SAÍDA
+    
+
+
+
 
 </script>
